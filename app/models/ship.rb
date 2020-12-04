@@ -4,7 +4,7 @@ class Ship
 
     def initialize (name, type, booty)
         @name = name
-        @typet = type
+        @type = type
         @booty = booty
         @@all << self
     end
@@ -14,7 +14,7 @@ class Ship
     end
 
     def self.clear
-        Ship.all.delete
+        self.all.clear
     end
     
 end
